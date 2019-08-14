@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { Text, View, StyleSheet, ImageBackground } from 'react-native';
 import yelp from '../api/yelp';
 
 const AddressShow = ({ navigation }) => {
@@ -63,11 +63,16 @@ const AddressShow = ({ navigation }) => {
 
     return (
         <View style={style.container}>
-            <Text style={style.nameStyle}> {add.name}</Text>
-            <Text> Address: </Text>
-            <Text> {add.location.display_address}</Text>
-            <Text> Service Options: {trans.transactions}</Text>
-            <Text> Contact Number: {contact.phone}</Text>
+            <ImageBackground source={require('../../assets/startScreen.jpeg')} style={style.backgroundImage}>
+                <Text style={style.nameStyle}> {add.name}</Text>
+
+                <Text style={style.textStyle}> Address: </Text>
+                <Text> {add.location.display_address}</Text>
+                <Text style={style.textStyle}> Service Options: </Text>
+                <Text> {trans.transactions}</Text>
+                <Text style={style.textStyle}> Contact Number: </Text>
+                <Text> {contact.phone}</Text>
+            </ImageBackground>
         </View>
     );
 };
@@ -81,12 +86,9 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 20,
     },
-    addressStyle: {
-
-        fontSize: 18,
-    },
-    serviceStyle: {
-
+    textStyle: {
+        fontWeight: 'bold',
+        fontSize: 16,
     },
 
 });
