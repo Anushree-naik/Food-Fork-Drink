@@ -2,11 +2,12 @@ import React from 'react';
 import { Text, View, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+
 const StartScreen = (props) => {
 
 
     return (
-        <>
+        <View style={style.container}>
             <ImageBackground source={require('../../assets/startScreen.jpeg')} style={style.backgroundImage}>
                 <TouchableOpacity
                     style={style.buttonStyle}
@@ -17,17 +18,24 @@ const StartScreen = (props) => {
                 </TouchableOpacity>
             </ImageBackground>
 
-        </>
+        </View>
     );
 };
 
 const style = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'center'
+    },
     backgroundImage: {
         flex: 1,
         alignSelf: 'stretch',
         width: null,
     },
     buttonStyle: {
+
+        justifyContent: 'flex-end',
+
         flexDirection: 'row',
         marginTop: 15,
         backgroundColor: '#f44336',
