@@ -12,9 +12,6 @@ This application makes use of React Native with Hooks and React-Navigation
 - Node.js
 
 ---
-## Prerequites
-
----
 ## Install & Run
 
 - `npm install`
