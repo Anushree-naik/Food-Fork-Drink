@@ -34,7 +34,7 @@ const style = StyleSheet.create({
     },
     buttonStyle: {
 
-        justifyContent: 'flex-end',
+        justifyContent: 'flex-start',
 
         flexDirection: 'row',
         marginTop: 15,
