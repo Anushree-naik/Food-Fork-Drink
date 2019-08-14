@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, View, StyleSheet, Button, ImageBackground, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const StartScreen = (props) => {
+
 
     return (
         <>
