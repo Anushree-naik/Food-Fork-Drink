@@ -63,7 +63,7 @@ const AddressShow = ({ navigation }) => {
 
     return (
         <View style={style.container}>
-            <ImageBackground source={require('../../assets/startScreen.jpeg')} style={style.backgroundImage}>
+            <ImageBackground source={require('../../assets/yelloBackground.jpeg')} style={style.backgroundImage}>
                 <Text style={style.nameStyle}> {add.name}</Text>
 
                 <Text style={style.textStyle}> Address: </Text>
@@ -80,6 +80,7 @@ const AddressShow = ({ navigation }) => {
 const style = StyleSheet.create({
     container: {
         flex: 1,
+        padding: 30,
         alignItems: 'flex-start'
     },
     nameStyle: {
@@ -89,6 +90,11 @@ const style = StyleSheet.create({
     textStyle: {
         fontWeight: 'bold',
         fontSize: 16,
+    },
+    backgroundImage: {
+        flex: 1,
+        alignSelf: 'stretch',
+        width: null,
     },
 
 });

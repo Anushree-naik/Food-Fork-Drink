@@ -7,7 +7,7 @@ const StartScreen = (props) => {
 
 
     return (
-        <View style={style.container}>
+        <View style={style.mainConatinerStyle}>
             <ImageBackground source={require('../../assets/startScreen.jpeg')} style={style.backgroundImage}>
                 <TouchableOpacity
                     style={style.buttonStyle}
@@ -23,9 +23,9 @@ const StartScreen = (props) => {
 };
 
 const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center'
+    mainConatinerStyle: {
+        flexDirection: 'column',
+        flex: 1
     },
     backgroundImage: {
         flex: 1,
