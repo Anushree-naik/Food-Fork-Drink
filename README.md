@@ -21,6 +21,7 @@ This application makes use of React Native with Hooks and React-Navigation
 
 ## Demo
 
+![](demo.gif)
 ---
 ## Future Work
 
