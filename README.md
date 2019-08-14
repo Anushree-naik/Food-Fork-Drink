@@ -25,7 +25,7 @@ This application makes use of React Native with Hooks and React-Navigation
 ## Future Work
 
 - Adding more features like recommendations for other users
-- Adding like feature
+- Adding a 'Like' feature
 - Making use of more similar APIs and to search for events happening around
 
 ---
