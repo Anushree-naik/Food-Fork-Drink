@@ -17,6 +17,10 @@ This application makes use of React Native with Hooks and React-Navigation
 ---
 ## Install & Run
 
+- `npm install`
+- `npm expo-cli init [project_name]`    
+- `npm start`
+
 ---
 
 ## Demo
