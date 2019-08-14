@@ -12,11 +12,25 @@ This application makes use of React Native with Hooks and React-Navigation
 - Node.js
 
 ---
+## Prerequite
+
+There are two ways you can use this project to execute on your device. 
+- Using your physical Device 
+- Using simulator/emulator
+
+- To use your physical device (Android/iOS) download the application from the Play Store/App Store call 'Expo'
+
+That is pretty much all you need to run your application
+
+---
+
 ## Install & Run
 
 - `npm install`
 - `npm expo-cli init [project_name]`    
 - `npm start`
+
+`npm start` starts your metro bundler on your laptop, which gives you a QR code. Go ahead and scan that QR code through your phone camera, it will open your current running project on your device. 
 
 ---
 
