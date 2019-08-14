@@ -21,7 +21,7 @@ This application makes use of React Native with Hooks and React-Navigation
 
 ## Demo
 
-![](demo.gif)
+![](https://github.com/Anushree-naik/Food-Fork-Drink/blob/master/demo.GIF)
 ---
 ## Future Work
 
