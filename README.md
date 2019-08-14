@@ -14,10 +14,8 @@ This application makes use of React Native with Hooks and React-Navigation
 ---
 ## Prerequites
 
-
 ---
 ## Install & Run
-
 
 ---
 
@@ -41,8 +39,8 @@ This application makes use of React Native with Hooks and React-Navigation
 ---
 ## Licence & Copyrights 
 
-Distributed under the MIT License. See [LICENSE](LICENSE.md) for more information.
-&copy; Anushree Naik
+- Distributed under the MIT License. See [LICENSE](LICENSE.md) for more information.
+- &copy; Anushree Naik
 
 
 
