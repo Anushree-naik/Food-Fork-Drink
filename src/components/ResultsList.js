@@ -6,7 +6,6 @@ import ResultsDetails from './ResultsDetails';
 
 const ResultsList = ({ title, results, navigation }) => {
 
-
     if (!results.length) {
         return null;
     }
