@@ -18,15 +18,14 @@ const ResultsDetails = ({ result, navigation, results }) => {
                 renderItem={({ item }) => {
                     return (
                         <TouchableOpacity onPress={() => navigation.navigate('Address', { id: item.id })}>
-                            <Text>Address Information</Text>
+                            <Text style={style.addStyle}>Address Information</Text>
                         </TouchableOpacity>
                     )
                 }}
             />
             <TouchableOpacity onPress={() => navigation.navigate('Address', { id: result.id })}>
-                <Text>Address Information</Text>
+                <Text style={style.addStyle}>Address Information</Text>
             </TouchableOpacity>
-
         </View>
     );
 };
@@ -46,8 +45,10 @@ const style = StyleSheet.create({
     name: {
         fontWeight: 'bold',
         fontSize: 18,
+    },
+    addStyle: {
+        fontWeight: 'bold',
     }
-
 });
 
 export default withNavigation(ResultsDetails);

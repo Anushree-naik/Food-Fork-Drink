@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, StyleSheet, ImageBackground } from 'react-native';
+import { Text, View, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import yelp from '../api/yelp';
 
 const AddressShow = ({ navigation }) => {
@@ -72,6 +72,12 @@ const AddressShow = ({ navigation }) => {
                 <Text> {trans.transactions}</Text>
                 <Text style={style.textStyle}> Contact Number: </Text>
                 <Text> {contact.phone}</Text>
+                <Text>{"\n"}</Text>
+                <Text style={style.recStyle} >Would you like to recommend this place to viewers?</Text>
+                <TouchableOpacity>
+                    <Text>{"\n"}</Text>
+                    <Text style={style.tapStyle}>Tap Here!</Text>
+                </TouchableOpacity>
             </ImageBackground>
         </View>
     );
@@ -96,7 +102,14 @@ const style = StyleSheet.create({
         alignSelf: 'stretch',
         width: null,
     },
-
+    recStyle: {
+        fontStyle: 'italic',
+        fontWeight: 'bold',
+        fontSize: 15,
+    },
+    tapStyle: {
+        fontSize: 15
+    }
 });
 
 export default AddressShow;
