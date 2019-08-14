@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import { Text, View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import ResultsDetails from './ResultsDetails';
+import jsonServer from '../api/jsonServer';
 
 const ResultsList = ({ title, results, navigation }) => {
+
+    const getRestaurants = dispatch => {
+        return async () => {
+            const response = await jsonServer.get('/restaurants');
+            //response.data === [{}, {}, {}]
+
+            dispatch({ type: 'getRestaurants', payload: response.data })
+        }
+    }
 
     if (!results.length) {
         return null;
     }
+
 
     return (
         <View style={style.contianer}>
