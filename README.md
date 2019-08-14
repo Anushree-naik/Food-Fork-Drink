@@ -16,6 +16,24 @@ This application makes use of React Native with Hooks and React-Navigation
 
 
 ---
+## Install & Run
+
+
+---
+
+## Demo
+
+---
+## Future Work
+
+---
+
+## Contribute
+
+---
+## Credits
+
+---
 ## Contributors
 
 - Anushree Naik - @<anushree317@gmail.com>
@@ -23,5 +41,8 @@ This application makes use of React Native with Hooks and React-Navigation
 ---
 ## Licence & Copyrights 
 
+Distributed under the MIT License. See [LICENSE](LICENSE.md) for more information.
 &copy; Anushree Naik
+
+
 
