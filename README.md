@@ -6,7 +6,7 @@ This application makes use of React Native with Hooks and React-Navigation
 ---
 ## Contributors
 
-- Anushree Naik - <@anushree317@gmail.com>
+- Anushree Naik - @<anushree317@gmail.com>
 
 ---
 ## Licence & Copyrights 
