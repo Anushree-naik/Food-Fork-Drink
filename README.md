@@ -4,6 +4,10 @@ React Native application for searching restaurants using a query given by the us
 This application makes use of React Native with Hooks and React-Navigation 
 
 ---
+## Prerequites
+
+
+---
 ## Contributors
 
 - Anushree Naik - @<anushree317@gmail.com>
