@@ -30,7 +30,7 @@ This application makes use of React Native with Hooks and React-Navigation
 
 Interested in contributing to this project? I'd love to have you! Please take a moment to review my [guide to contributing](CONTRIBUTING.md) before getting started.
 
-We welcome developers of any background and skill level. 🌱
+I welcome developers of any background and skill level. 🌱
 
 ---
 ## Credits
