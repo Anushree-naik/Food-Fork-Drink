@@ -7,7 +7,7 @@ const StartScreen = (props) => {
 
     return (
         <>
-            <ImageBackground source={require('../../assets/startPage.jpeg')} style={style.backgroundImage}>
+            <ImageBackground source={require('../../assets/startScreen.jpeg')} style={style.backgroundImage}>
                 <TouchableOpacity
                     style={style.buttonStyle}
                     onPress={() => props.navigation.navigate('Search')}
