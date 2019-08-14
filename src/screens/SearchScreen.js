@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import useResults from '../hooks/useResults';
@@ -18,6 +18,7 @@ const SearchScreen = () => {
 
     return (
         <View>
+
             <SearchBar
                 term={term}
                 onTermChange={setTerm}
@@ -49,6 +50,7 @@ const SearchScreen = () => {
 };
 
 const style = StyleSheet.create({
+
 });
 
 export default SearchScreen;

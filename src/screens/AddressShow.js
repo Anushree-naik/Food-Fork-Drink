@@ -62,15 +62,33 @@ const AddressShow = ({ navigation }) => {
 
 
     return (
-        <View>
-            <Text>{add.name}</Text>
-            <Text> Address: {add.location.display_address}</Text>
+        <View style={style.container}>
+            <Text style={style.nameStyle}> {add.name}</Text>
+            <Text> Address: </Text>
+            <Text> {add.location.display_address}</Text>
             <Text> Service Options: {trans.transactions}</Text>
             <Text> Contact Number: {contact.phone}</Text>
         </View>
     );
 };
 
-const style = StyleSheet.create({});
+const style = StyleSheet.create({
+    container: {
+        flex: 1,
+        alignItems: 'flex-start'
+    },
+    nameStyle: {
+        fontWeight: 'bold',
+        fontSize: 20,
+    },
+    addressStyle: {
+
+        fontSize: 18,
+    },
+    serviceStyle: {
+
+    },
+
+});
 
 export default AddressShow;

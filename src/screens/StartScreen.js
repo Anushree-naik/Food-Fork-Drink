@@ -14,7 +14,7 @@ const StartScreen = (props) => {
                     onPress={() => props.navigation.navigate('Search')}
                 >
                     <MaterialCommunityIcons style={style.iconStyle} name="food-fork-drink" />
-                    <Text style={style.textStyle}>Explore Your Restaurant Options!</Text>
+                    <Text style={style.textStyle}>Get Started!</Text>
                 </TouchableOpacity>
             </ImageBackground>
 
@@ -33,34 +33,34 @@ const style = StyleSheet.create({
         width: null,
     },
     buttonStyle: {
-
         justifyContent: 'flex-start',
-
         flexDirection: 'row',
-        marginTop: 15,
-        backgroundColor: '#f44336',
+        marginTop: 100,
+        backgroundColor: '#FFB6C1',
         height: 50,
-        borderRadius: 6,
+        borderRadius: 3,
         marginHorizontal: 15,
         marginBottom: 10,
         borderWidth: 3,
-        borderColor: '#e7e7e7',
+        borderColor: '#B0E0E6',
         paddingBottom: 8,
     },
     textStyle: {
+        flex: 1,
         fontSize: 20,
         color: 'black',
-        fontWeight: 'bold',
-        fontStyle: 'italic',
         height: 30,
         alignSelf: 'center',
-        padding: 5,
-        flex: 1
+        alignContent: 'center',
+        padding: 30,
+        marginBottom: 10
+
     },
     iconStyle: {
         fontSize: 35,
         alignSelf: 'center',
         marginHorizontal: 10,
+        padding: 10,
     }
 });
 export default StartScreen;

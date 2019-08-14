@@ -35,7 +35,7 @@ const ResultsShowScreen = ({ navigation }) => {
 
 const style = StyleSheet.create({
     textStyle: {
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: 'bold',
         padding: 15,
         alignSelf: 'center',
