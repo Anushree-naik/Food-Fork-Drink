@@ -7,5 +7,5 @@ This application makes use of React Native with Hooks and React-Navigation
 
 # Licence & Copyrights 
 
-&copy Anushree Naik
+&copy; Anushree Naik
 
