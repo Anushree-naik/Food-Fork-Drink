@@ -1,6 +1,4 @@
-import React, { useReducer } from 'react';
-
-const SavedItemsContext = React.createContext();
+import createDataContext from './createDataContext';
 
 const savedItemsReducer = (state, action) => {
     switch (action.type) {
@@ -12,18 +10,15 @@ const savedItemsReducer = (state, action) => {
     }
 }
 
-export const SavedItemsProvider = ({ children = null }) => {
-
-    const [resultList, dispatch] = useReducer(savedItemsReducer, []);
-
-    const saveRestaurants = () => {
+const saveRestaurants = (dispatch) => {
+    return () => {
         dispatch({ type: 'save_restaurants' })
     };
-    return (
-        <SavedItemsContext.Provider value={{ data: resultList, saveRestaurants }}>
-            {children}
-        </SavedItemsContext.Provider>
-    )
 };
 
-export default SavedItemsContext;
+
+export const { Context, Provider } = createDataContext(
+    savedItemsReducer,
+    { saveRestaurants },
+    []
+);

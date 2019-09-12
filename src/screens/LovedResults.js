@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import { Text, View, StyleSheet, FlatList } from 'react-native';
 import { withNavigation } from 'react-navigation';
-import SavedItemsContext from '../context/SavedItemsContext';
+import { Context } from '../context/SavedItemsContext';
 
 
 const LovedResults = () => {
 
-    const { data } = useContext(SavedItemsContext);
+    const { state } = useContext(Context);
 
     return (
         <View>
             <Text>Saved results</Text>
             <FlatList
-                data={data}
+                data={state}
                 keyExtractor={(resultList) => resultList.title}
                 renderItem={({ item }) => {
                     return (

@@ -3,12 +3,12 @@ import { Text, Image, View, StyleSheet, TouchableOpacity, Alert } from 'react-na
 import { withNavigation } from 'react-navigation';
 import { FlatList } from 'react-native-gesture-handler';
 import { EvilIcons } from '@expo/vector-icons';
-import SavedItemsContext from '../context/SavedItemsContext';
+import { Context } from '../context/SavedItemsContext';
 
 
 const ResultsDetails = ({ result, navigation, results }) => {
 
-    const { saveRestaurants } = useContext(SavedItemsContext);
+    const { saveRestaurants } = useContext(Context);
 
     this.state = {
         pressed: false
