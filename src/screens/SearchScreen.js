@@ -3,6 +3,7 @@ import { Text, View, StyleSheet, ScrollView } from 'react-native';
 import SearchBar from '../components/SearchBar';
 import useResults from '../hooks/useResults';
 import ResultsList from '../components/ResultsList';
+import SavedItems from '../components/SavedItems';
 
 const SearchScreen = () => {
 
@@ -24,6 +25,8 @@ const SearchScreen = () => {
                 onTermChange={setTerm}
                 onTermSubmit={() => searchApi(term)}
             />
+
+            <SavedItems />
 
             {errorMessage ? <Text>{errorMessage}</Text> : null}
 

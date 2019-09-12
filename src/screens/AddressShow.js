@@ -6,7 +6,6 @@ const AddressShow = ({ navigation }) => {
     const [add, setAdd] = useState(null);
     const [trans, setTrans] = useState(null);
     const [contact, setContact] = useState(null);
-    const [cousine, setCousine] = useState(null);
 
     const id = navigation.getParam('id');
 
@@ -73,11 +72,11 @@ const AddressShow = ({ navigation }) => {
                 <Text style={style.textStyle}> Contact Number: </Text>
                 <Text> {contact.phone}</Text>
                 <Text>{"\n"}</Text>
-                <Text style={style.recStyle} >Would you like to recommend this place to viewers?</Text>
+                {/*<Text style={style.recStyle} >Would you like to recommend this place to viewers?</Text>
                 <TouchableOpacity>
                     <Text>{"\n"}</Text>
                     <Text style={style.tapStyle}>Tap Here!</Text>
-                </TouchableOpacity>
+                </TouchableOpacity>*/}
             </ImageBackground>
         </View>
     );
