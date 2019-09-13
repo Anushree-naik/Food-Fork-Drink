@@ -1,4 +1,5 @@
 import createDataContext from './createDataContext';
+import jsonserver from '../api/jsonserver';
 
 const savedItemsReducer = (state, action) => {
     switch (action.type) {
@@ -10,6 +11,12 @@ const savedItemsReducer = (state, action) => {
             return state;
     }
 }
+
+const getRestaurants = (dispatch) => {
+    return async () => {
+        await jsonserver.get('/saveditems')
+    };
+};
 
 const saveRestaurants = (dispatch) => {
     return () => {
@@ -26,6 +33,5 @@ const deleteRestaurants = (dispatch) => {
 export const { Context, Provider } = createDataContext(
     savedItemsReducer,
     { saveRestaurants, deleteRestaurants },
-
     []
 );
