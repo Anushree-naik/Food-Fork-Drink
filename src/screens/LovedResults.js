@@ -1,22 +1,30 @@
 import React, { useContext } from 'react';
-import { Text, View, StyleSheet, FlatList } from 'react-native';
+import { Text, View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import { Context } from '../context/SavedItemsContext';
+import { MaterialIcons } from '@expo/vector-icons';
 
 
 const LovedResults = () => {
 
-    const { state } = useContext(Context);
+    const { state, deleteRestaurants } = useContext(Context);
 
     return (
         <View>
-            <Text>Saved results</Text>
+
             <FlatList
                 data={state}
                 keyExtractor={(resultList) => resultList.title}
                 renderItem={({ item }) => {
                     return (
-                        <Text>{item.title}</Text>
+                        <View style={style.row}>
+                            <Text style={style.title}>{item.title}- {item.id}</Text>
+                            <TouchableOpacity
+                                onPress={() => deleteRestaurants(item.id)}
+                            >
+                                < MaterialIcons style={style.icon} name="delete" />
+                            </TouchableOpacity>
+                        </View>
                     )
                 }}
             />
@@ -24,6 +32,20 @@ const LovedResults = () => {
     )
 };
 
-const style = StyleSheet.create({});
+const style = StyleSheet.create({
+    row: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: 20,
+        paddingHorizontal: 10
+
+    },
+    title: {
+        fontSize: 18,
+    },
+    icon: {
+        fontSize: 24
+    }
+});
 
 export default withNavigation(LovedResults);

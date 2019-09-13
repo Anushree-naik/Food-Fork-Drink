@@ -3,10 +3,11 @@ import createDataContext from './createDataContext';
 const savedItemsReducer = (state, action) => {
     switch (action.type) {
         case 'save_restaurants':
-            return [...state, { title: `Restaurants #${state.length + 1}` }];
+            return ([...state, { id: Math.floor(Math.random() * 99990), title: `Restaurant #${state.length + 1}` }]);
+        case 'delete_restaurants':
+            return state.filter((saveRestaurants) => saveRestaurants.id !== action.payload);
         default:
             return state;
-
     }
 }
 
@@ -16,9 +17,15 @@ const saveRestaurants = (dispatch) => {
     };
 };
 
+const deleteRestaurants = (dispatch) => {
+    return (id) => {
+        dispatch({ type: 'delete_restaurants', payload: id })
+    };
+};
 
 export const { Context, Provider } = createDataContext(
     savedItemsReducer,
-    { saveRestaurants },
+    { saveRestaurants, deleteRestaurants },
+
     []
 );
