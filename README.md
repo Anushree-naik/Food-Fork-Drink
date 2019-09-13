@@ -49,7 +49,9 @@ Interested in contributing to this project? I'd love to have you! Please take a 
 I welcome developers of any background and skill level. 🌱
 
 ---
-## Credits
+## Detailed Report
+
+You can find the detailed report of this project [here](Report.pdf)
 
 ---
 ## Contributors
