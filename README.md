@@ -1,7 +1,7 @@
 # Food-Fork-Drink
 
 React Native application for searching restaurants using a query given by the user. 
-This application makes use of React Native with Hooks and React-Navigation 
+This application makes use of React Native with Hooks and React-Navigation.  
 
 ---
 ## Technology 
@@ -12,25 +12,21 @@ This application makes use of React Native with Hooks and React-Navigation
 - Node.js
 
 ---
-## Prerequite
+## Prerequites, Install and Run
 
-There are two ways you can use this project to execute on your device. 
-- Using your physical Device 
-- Using simulator/emulator
+- To start with this project, there are few setting you have to do before hand. Since react native development is a cross platform development, you can either execute this program on your physical mobile (iOS/Android) device or on simulator or on emulator. 
 
-- To use your physical device (Android/iOS) download the application from the Play Store/App Store call 'Expo'
+- This particular project, makes use of `expo-cli` library to get started. This adds up a ton of different configurations to use features common in apps, like icons, videos, etc. To get started with the project, let's follow the following commands: 
 
-That is pretty much all you need to run your application
+- First, in your terminal, run `npm install`
 
----
+- After installing, run `npm start`. This opens the React-Native bundler, which gets your code ready to be run on a mobile device/simulato/emulator. 
 
-## Install & Run
+- To use your physical device, (Android/iOS) download the application from the Play Store/App Store call 'Expo'
 
-- `npm install`
-- `npm expo-cli init [project_name]`    
-- `npm start`
-
-`npm start` starts your metro bundler on your laptop, which gives you a QR code. Go ahead and scan that QR code through your phone camera, it will open your current running project on your device. 
+- To make use of emulator/simulator follow the guide
+1. Simulator @<https://docs.expo.io/versions/latest/workflow/ios-simulator/>
+2. Emulator @<https://docs.expo.io/versions/v34.0.0/workflow/android-studio-emulator/>
 
 ---
 
