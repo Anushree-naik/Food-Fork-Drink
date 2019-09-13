@@ -1,6 +1,5 @@
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 import SearchScreen from './src/screens/SearchScreen';
 import ResultsShowScreen from './src/screens/ResultsShowScreen'
 import StartScreen from './src/screens/StartScreen';
