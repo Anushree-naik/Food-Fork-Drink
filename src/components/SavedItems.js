@@ -5,11 +5,8 @@ import { withNavigation } from 'react-navigation';
 
 const SavedItems = ({ navigation }) => {
 
-
-
     return (
         <View>
-
             <TouchableOpacity
                 style={style.backgroundStyle}
                 onPress={() => navigation.navigate('Loved')}

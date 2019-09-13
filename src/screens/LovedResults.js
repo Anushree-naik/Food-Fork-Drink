@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Text, View, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import { Context } from '../context/SavedItemsContext';
@@ -7,7 +7,11 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 const LovedResults = () => {
 
-    const { state, deleteRestaurants } = useContext(Context);
+    const { state, deleteRestaurants, getRestaurants } = useContext(Context);
+
+    //    useEffect(() => {
+    //        getRestaurants();
+    //    }, [1]);
 
     return (
         <View>
