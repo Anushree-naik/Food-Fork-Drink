@@ -38,5 +38,5 @@ const deleteRestaurants = (dispatch) => {
 export const { Context, Provider } = createDataContext(
     savedItemsReducer,
     { saveRestaurants, deleteRestaurants, getRestaurants },
-    []
+    [{ title: 'Restaurant #1', id: 1 }]
 );
