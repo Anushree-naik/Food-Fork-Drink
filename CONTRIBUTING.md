@@ -21,6 +21,8 @@ All the ground rules and expectations are adapted from [opensource.guide](https:
 4. Start making changes in a new branch `git checkout -b feature/branchName`
 5. Commit all changes and push them into remote repo using `git push origin feature/branchName`. 
 6. Open a pull request, once you are ready to code. 
+7. For detailed explaination please refer to [README.md](README.md) and [Report.md](Report.md)
+
 
 ## While creating pull request:
 
