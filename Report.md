@@ -39,6 +39,8 @@
 
 2. My future goal is to understand the process where I can use multiple APIs and cross reference them inside the application to make use of all the available data. 
 
+3. To use JSON server, there is process that you have to follow in order to integrate it with React Native. @<https://npmjs.com/package/json-server> is the package we can leverage and use like an outside JSON API server. For our phone to be able to communicate with this JSON server, `ngrok server` tool can be used. `ngrok` provides you with the server address which would be available to the outside world as well. Unless you pay some amount, ngrok gives you this temporary address which has to be restarted every 8hours. Using this address, you can make a connection request through your application the API. 
+
 ## Credits: 
 
 - I learnt using React Native from scratch and I made use of few references that I have mentioned below. 

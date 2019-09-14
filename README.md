@@ -36,9 +36,9 @@ This application makes use of React Native with Hooks and React-Navigation.
 ---
 ## Future Work
 
-- Adding more features like recommendations for other users
-- Adding a 'Like' feature
-- Making use of more similar APIs and to search for events happening around
+- Integrating multiple APIs together to search variety of events happening around your area.
+- Add `Recommendation` feature
+- Make JSON server work properly.
 
 ---
 
