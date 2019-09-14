@@ -25,16 +25,20 @@ const style = StyleSheet.create({
         backgroundColor: '#dc143c',
         height: 50,
         borderRadius: 4,
+        marginVertical: 14,
         marginHorizontal: 15,
         flexDirection: 'row',
         marginBottom: 10,
     },
 
     textStyle: {
-        fontSize: 18,
         flex: 1,
+        fontSize: 20,
+        color: 'black',
         justifyContent: 'center',
-        alignSelf: 'center'
+        alignItems: 'center',
+        alignSelf: 'center',
+        marginLeft: 140,
     }
 });
 
