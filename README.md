@@ -30,6 +30,31 @@ This application makes use of React Native with Hooks and React-Navigation.
  
 ---
 
+## YELP signup and Configuring Axios 
+
+- `YELP API` is a free API  that we can use to search big group of restaurants given some search term.
+
+- You can find the documentation @<yelp.com/fusion>
+
+- To make use of `YELP API` you have follow few steps. 
+    1. Visit @<yelp.com/fusion> or Google YELP API(in case you get an error saying 404 page not found)
+    2. Sign up or Log in to the YELP account.
+    3. After signing up, YELP is automatically going to redirect you to their home page. In this case, manually redirect yourself to @<yelp.com/fusion>
+    4. Click on `Get Started` button. You will be redirected to their Developer's page @<https://www.yelp.com/developers/v3/manage_app>
+    5. You first will have to create an app and fill out the information in the form asked on that page. Few of the important fields are: `App Name` , `Industry`, `Contact Email`, `Description`. 
+    6. After all these fields are filled, go ahead and accept the terms of use by Yelp and click on `Create New App`. 
+    7. Once your app is created, you will be provided with the `Client ID` and the `API Key`
+    8. On this page you would want to look into `Business Endpoints` in more detail. This app primarily makes use of `Business Search` and `Business Details` which are `Business Endpoints`'s sub-sections. But if you want to contribute in developing this app more, you can look into other points as as well.
+    9. On `Business Search` page @<https://www.yelp.com/developers/documentation/v3/business_search>, you can find a URL under `Request` section, which we would request to through our app in order to form a network connection and get the data from API : `/businesses/search`
+    10. In this application, I made use of various paramaters from `/businesses/search`, those are : `term`, `location`, `categories`, `limit`, `price`, `transactions`, etc
+    11. On `Business Details` page @<https://www.yelp.com/developers/documentation/v3/business>, you can find a similar URL as mentioned in the previous point under `Request` section, which we would request to through our app in order to form a network connection and get the data from API. The only difference here is, to make use of attibutes from this page, you would put `{id}` at the end of the URL : `/businesses/{id}`. 
+    12. In `/businesses/{id}`, you would find a restaurant specific information. I made use of `photos` parameters to get an access to pictures available for a specific restaurant. 
+    
+
+     
+
+---
+
 ## Demo
 
 ![](https://github.com/Anushree-naik/Food-Fork-Drink/blob/master/demo.gif)
