@@ -18,16 +18,16 @@ This application makes use of React Native with Hooks and React-Navigation.
 
 - This particular project, makes use of `expo-cli` library to get started. This adds up a ton of different configurations to use features common in apps, like icons, videos, etc. To get started with the project, let's follow the following commands: 
 
-- First, in your terminal, run `npm install`
-
-- After installing, run `npm start`. This opens the React-Native bundler, which gets your code ready to be run on a mobile device/simulato/emulator. 
-
-- To use your physical device, (Android/iOS) download the application from the Play Store/App Store call 'Expo'
-
-- To make use of emulator/simulator follow the guide
-1. Simulator @<https://docs.expo.io/versions/latest/workflow/ios-simulator/>
-2. Emulator @<https://docs.expo.io/versions/v34.0.0/workflow/android-studio-emulator/>
-
+1. Download/ Clone this repo on your device. 
+2. Download `Expo` app on your mobile device if you are using one.
+3. To make use of emulator/simulator follow the guide
+    - Simulator @<https://docs.expo.io/versions/latest/workflow/ios-simulator/>
+    - Emulator @<https://docs.expo.io/versions/v34.0.0/workflow/android-studio-emulator/>
+4. Start with running `npm install` on your device.
+5. Run `npm start` to start the expo bundler.
+6. If you are using your mobile device, scan the QR code through your camera and the project will start running on your device inside `Expo` application.
+7. Play with it :)  
+ 
 ---
 
 ## Demo

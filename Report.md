@@ -4,6 +4,8 @@
 
 - To make a cross platform mobile application, making use of React framework in Javascript. Since React-Native was a new technology for me to get hands on, my aim for was to learn as much as I can, in the span of 8 weeks or so. 
 
+--- 
+
 ## What is this project?
 
 - In this project, I have levegraged the Yelp API as a primary database for the application. The best part of React Native framework is you can make multiple resuable components inside your project directory which can save writing a lot of redundent code. 
@@ -22,6 +24,8 @@
 - For a prototype purpose, the application is currently generating it's random IDs and it is making use of it to save the Restaurants in `Saved Items` screen. These IDs are not similar to the ones given by YELP API. 
 - When you navigate into `Saved Items` screen, you see `Restaurnt #1 - ID`. If you do not want any particular item to be in that list, you also have an option to delete it. At the backend, when you hit the delete icon, the code knows which ID to delete and you see that item removed from the screen. 
 
+--- 
+
 ## How to run this project on your device?
 
 1. Download/ Clone this repo on your device. 
@@ -32,6 +36,7 @@
 4. If you are using your mobile device, scan the QR code through your camera and the project will start running on your device inside `Expo` application.
 5. Play with it :) 
 
+--- 
 
 ## Challenges that I faced during development of this project:
 
@@ -40,6 +45,8 @@
 2. My future goal is to understand the process where I can use multiple APIs and cross reference them inside the application to make use of all the available data. 
 
 3. To use JSON server, there is process that you have to follow in order to integrate it with React Native. @<https://npmjs.com/package/json-server> is the package we can leverage and use like an outside JSON API server. For our phone to be able to communicate with this JSON server, `ngrok server` tool can be used. `ngrok` provides you with the server address which would be available to the outside world as well. Unless you pay some amount, ngrok gives you this temporary address which has to be restarted every 8hours. Using this address, you can make a connection request through your application the API. 
+
+--- 
 
 ## Credits: 
 
