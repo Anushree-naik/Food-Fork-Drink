@@ -51,7 +51,7 @@ I welcome developers of any background and skill level. 🌱
 ---
 ## Detailed Report
 
-You can find the detailed report of this project [here](Report.txt).
+You can find the detailed report of this project [here](Report.md).
 
 ---
 ## Contributors
