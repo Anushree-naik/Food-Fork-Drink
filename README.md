@@ -30,7 +30,7 @@ This application makes use of React Native with Hooks and React-Navigation.
  
 ---
 
-## YELP signup and Configuring Axios 
+## YELP signup 
 
 - `YELP API` is a free API  that we can use to search big group of restaurants given some search term.
 
@@ -50,8 +50,10 @@ This application makes use of React Native with Hooks and React-Navigation.
     11. On `Business Details` page @<https://www.yelp.com/developers/documentation/v3/business>, you can find a similar URL as mentioned in the previous point under `Request` section, which we would request to through our app in order to form a network connection and get the data from API. The only difference here is, to make use of attibutes from this page, you would put `{id}` at the end of the URL : `/businesses/{id}`. 
     12. In `/businesses/{id}`, you would find a restaurant specific information. I made use of `photos` parameters to get an access to pictures available for a specific restaurant. 
     
+- When you go through all these steps, you would want to change the API key in [api/yelp.js](/api/yelp.js)
+---
 
-     
+## Configuring Axios 
 
 ---
 
