@@ -37,7 +37,7 @@ This application makes use of React Native with Hooks and React-Navigation.
 - You can find the documentation @<yelp.com/fusion>
 
 - To make use of `YELP API` you have follow few steps. 
-    1. Visit @<yelp.com/fusion> or Google YELP API(in case you get an error saying 404 page not found)
+    1. Visit @<https://www.yelp.com/fusion> or Google YELP API(in case you get an error saying 404 page not found)
     2. Sign up or Log in to the YELP account.
     3. After signing up, YELP is automatically going to redirect you to their home page. In this case, manually redirect yourself to @<yelp.com/fusion>
     4. Click on `Get Started` button. You will be redirected to their Developer's page @<https://www.yelp.com/developers/v3/manage_app>
