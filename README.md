@@ -39,7 +39,7 @@ This application makes use of React Native with Hooks and React-Navigation.
 - To make use of `YELP API` you have follow few steps. 
     1. Visit @<https://www.yelp.com/fusion> or Google YELP API(in case you get an error saying 404 page not found)
     2. Sign up or Log in to the YELP account.
-    3. After signing up, YELP is automatically going to redirect you to their home page. In this case, manually redirect yourself to @<yelp.com/fusion>
+    3. After signing up, YELP is automatically going to redirect you to their home page. In this case, manually redirect yourself to @<https://www.yelp.com/fusion>
     4. Click on `Get Started` button. You will be redirected to their Developer's page @<https://www.yelp.com/developers/v3/manage_app>
     5. You first will have to create an app and fill out the information in the form asked on that page. Few of the important fields are: `App Name` , `Industry`, `Contact Email`, `Description`. 
     6. After all these fields are filled, go ahead and accept the terms of use by Yelp and click on `Create New App`. 
@@ -52,7 +52,7 @@ This application makes use of React Native with Hooks and React-Navigation.
     
 - When you go through all these steps, you would want to change the API key in [yelp.js](https://github.com/Anushree-naik/Food-Fork-Drink/blob/master/src/api/yelp.js). 
 
-- **Make sure you have one space inbetween `Bearer` and your API key. In my case, `FlG-H_TaiuiEdp7zhiLgFZ-Uy4KQSxOYce-REKreXCTxcB2h6YpCUG1zRO-nsA5GJ4Cescr2Bgz4BWRDw09LpJG5ELczqANneNCIDCkJbQ1B2Cm3TkniZFlip7BNXXYx` is the YELP API key. 
+- **In [yelp.js](https://github.com/Anushree-naik/Food-Fork-Drink/blob/master/src/api/yelp.js), make sure you have one space inbetween `Bearer` and your API key. In my case, `FlG-H_TaiuiEdp7zhiLgFZ-Uy4KQSxOYce-REKreXCTxcB2h6YpCUG1zRO-nsA5GJ4Cescr2Bgz4BWRDw09LpJG5ELczqANneNCIDCkJbQ1B2Cm3TkniZFlip7BNXXYx` is the YELP API key. 
 
 ---
 
@@ -61,7 +61,7 @@ This application makes use of React Native with Hooks and React-Navigation.
 - Anytime we are making a network request through the React Native application, we can make use of various options like `fetch` or `axios`. 
 - In this application, I make use of `axios`
 - `axios`is a separate library for making request.
-- to make use of `axios`, we first have to install it as a package in your project directory using the cmd `npm install axios`. 
+- To make use of `axios`, we first have to install it as a package in your project directory using the cmd `npm install axios`. 
 - Once you have this library installed, you can make use of it in your api folder, like how I have done in [yelp.js](https://github.com/Anushree-naik/Food-Fork-Drink/blob/master/src/api/yelp.js)
 
 ---
