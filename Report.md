@@ -52,10 +52,9 @@
 
 - I learnt using React Native from scratch and I made use of few references that I have mentioned below. 
 
-1. @<https://github.com/StephenGrider/rn-casts/tree/master/food>
-2. @<https://github.com/StephenGrider/rn-casts/tree/master/blog/src/context>
-3. @<https://docs.expo.io/versions/latest/workflow/ios-simulator/>
-4. @<https://www.youtube.com/watch?v=DLX62G4lc44>
+1. @https://www.udemy.com/the-complete-react-native-and-redux-course/learn/lecture/15707016#content
+2. @<https://docs.expo.io/versions/latest/workflow/ios-simulator/>
+3. @<https://www.youtube.com/watch?v=DLX62G4lc44>
 
 - I also made use of few backgrounds pictures that I downloaded for free of cost from the internet
 
